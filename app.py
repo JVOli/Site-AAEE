@@ -26,7 +26,7 @@ if seal_path.exists():
   for needle in [
     'src="Selo.png"',
     "src='Selo.png'",
-    'src="SeloTito.png"',
+    'src="Selo1.png"',
   ]:
     html = html.replace(needle, f'src="data:image/png;base64,{seal_b64}"')
 else:
