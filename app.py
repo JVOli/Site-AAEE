@@ -4,7 +4,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from streamlit_js_eval import streamlit_js_eval
 
-st.set_page_config(page_title="AAEE", layout="wide")
+st.set_page_config(page_title="AAEE",page_icon="Selo.png", layout="wide")
 
 project_root = pathlib.Path(__file__).parent
 html_path = project_root / "index.html"
