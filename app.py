@@ -9,7 +9,7 @@ st.set_page_config(page_title="AAEE", layout="wide")
 project_root = pathlib.Path(__file__).parent
 html_path = project_root / "index.html"
 css_path = project_root / "styles.css"
-seal_path = project_root / "Selo.png"
+seal_path = project_root / "Selo1.png"
 
 css = ""
 if css_path.exists():
