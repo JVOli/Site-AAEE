@@ -1,0 +1,12 @@
+services:
+  site-aaee:
+    image: site-aaee:prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    environment:
+      - TZ=America/Sao_Paulo
+
