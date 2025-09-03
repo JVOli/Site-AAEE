@@ -1,15 +1,15 @@
 :root {
-  --pink-50: #e6f2ff;  /* claro (agora azul) */
-  --pink-100: #cfe8ff;
-  --pink-200: #b3d8ff;
-  --pink-300: #85c2ff;
-  --pink-400: #5aa9ff;
-  --pink-500: #2f8cff;
-  --pink-600: #1f6fe0;
-  --pink-700: #1a57b8;
-  --pink-800: #163a8c;
-  --text-light: #f7fbff;
-  --shadow: rgba(16, 56, 149, 0.35);
+  --pink-50: #ffe4f1;
+  --pink-100: #ffcde5;
+  --pink-200: #ffb3d7;
+  --pink-300: #ff99c9;
+  --pink-400: #ff7fb8;
+  --pink-500: #ff63a6;
+  --pink-600: #ff4a99;
+  --pink-700: #ff2f8a;
+  --pink-800: #e81f7a;
+  --text-light: #fff6fb;
+  --shadow: rgba(149, 18, 88, 0.35);
 }
 
 * {
@@ -50,7 +50,7 @@ body {
   text-shadow:
     0 2px 0 var(--pink-600),
     0 10px 30px var(--shadow),
-    0 0 40px rgba(47, 140, 255, 0.45);
+    0 0 40px rgba(255, 99, 166, 0.45);
 }
 
 .subtitle {
@@ -92,6 +92,7 @@ body {
   color: #fff;
   font-size: 14px;
   letter-spacing: 0.6px;
+  text-transform: lowercase;
   opacity: 0.9;
   text-shadow: 0 2px 8px var(--shadow);
 }
@@ -131,7 +132,7 @@ body {
 }
 
 .floaters li::before {
-  content: 'Ⓜ'; /* padrão (azul) */
+  content: '💘'; /* padrão */
   display: block;
 }
 
@@ -167,14 +168,12 @@ body {
 .floaters li:nth-child(20) { left: 65%; font-size: 30px; animation-duration: 15s, 5.2s; animation-delay: 2.6s, 0.1s; }
 
 /* Alternar símbolos para incluir corações e cupidos */
-.floaters li:nth-child(3n)::before  { content: '💙'; }
-.floaters li:nth-child(4n)::before  { content: '🤍'; }
-.floaters li:nth-child(5n)::before  { content: '🩵'; }
-.floaters li:nth-child(7n)::before  { content: 'Ⓜ'; }
+.floaters li:nth-child(3n)::before  { content: '❤'; }
+.floaters li:nth-child(4n)::before  { content: '💕'; }
+.floaters li:nth-child(5n)::before  { content: '💖'; }
+.floaters li:nth-child(7n)::before  { content: '👼'; }
 
 /* Ajuste responsivo do link */
 @media (max-width: 420px) {
   .event-link { word-break: break-all; }
 }
-
-
